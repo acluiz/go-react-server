@@ -52,5 +52,5 @@ func main() {
 
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
-	<- quit
+	<-quit
 }
