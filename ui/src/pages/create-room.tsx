@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import { ArrowRight } from "lucide-react";
-
-import amaLogo from "../assets/images/ama-logo.svg";
+import AmaLogo from "../assets/images/ama-logo.svg";
 
 export const CreateRoom = () => {
   const navigate = useNavigate();
@@ -16,7 +15,7 @@ export const CreateRoom = () => {
   return (
     <main className="h-screen flex items-center justify-center px-4">
       <div className="max-w-[450px] flex flex-col gap-6">
-        <img src={amaLogo} alt="AMA Logo" className="h-10" />
+        <img src={AmaLogo} alt="AMA Logo" className="h-10" />
 
         <p className="leading-relaxed text-zinc-300 text-center">
           Crie uma sala pública de AMA (Ask me anything) e priorize as perguntas
