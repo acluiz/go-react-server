@@ -30,6 +30,7 @@ export const CreateMessageForm = () => {
       className="flex items-center gap-2 p-2 rounded-xl border border-zinc-800 bg-zinc-900 ring-orange-400 ring-offset-2 ring-offset-zinc-950 focus-within:ring-1"
     >
       <input
+        required
         type="text"
         name="message"
         autoComplete="off"

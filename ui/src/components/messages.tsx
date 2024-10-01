@@ -22,6 +22,7 @@ export const Messages = () => {
       {messages.map(({ id, answered, reaction_count, message }) => (
         <Message
           key={id}
+          id={id}
           answered={answered}
           amountOfReactions={reaction_count}
           text={message}
