@@ -20,9 +20,13 @@ export const Messages = () => {
 
   useMessagesWS({ roomID });
 
+  const sortedMessages = messages.sort(
+    (a, b) => b.reaction_count - a.reaction_count
+  );
+
   return (
     <ol className="list-decimal list-outside px-3 space-y-8">
-      {messages.map(({ id, answered, reaction_count, message }) => (
+      {sortedMessages.map(({ id, answered, reaction_count, message }) => (
         <Message
           key={id}
           id={id}
